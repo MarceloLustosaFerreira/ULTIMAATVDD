@@ -1,0 +1,36 @@
+<template>
+	<h1>Calculadora</h1>
+	<div class="calculadora">
+		<input type="text" class="input" value={inputValue} disabled />
+		<div class="buttons">
+			<div class="teclas">
+				<button class="butaun" onclick={handleNumberClick} value="">on</button>
+				<button class="butaun" onclick={handleNumberClick} value="7">7</button>
+				<button class="butaun" onclick={handleNumberClick} value="8">8</button>
+				<button class="butaun" onclick={handleNumberClick} value="9">9</button>
+			</div>
+			<div class="teclas">
+				<button class="butaun" onclick={handleNumberClick} value="4">4</button>
+				<button class="butaun" onclick={handleNumberClick} value="5">5</button>
+				<button class="butaun" onclick={handleNumberClick} value="6">6</button>
+				<button class="butaun" onclick={handleOperationClick} value="+">+</button>
+			</div>
+			<div class="teclas">
+				<button class="butaun" onclick={handleNumberClick} value="1">1</button>
+				<button class="butaun" onclick={handleNumberClick} value="2">2</button>
+				<button class="butaun" onclick={handleNumberClick} value="3">3</button>
+				<button class="butaun" onclick={handleOperationClick} value="-">-</button>
+			</div>
+			<div class="teclas">
+				<button class="butaun" onclick={handleNumberClick} value="0">0</button>
+				<button class="butaun" onclick={handleOperationClick} value="=">=</button>
+				<button class="butaun" onclick={handleOperationClick} value="*">*</button>
+				<button class="butaun" onclick={handleOperationClick} value="/">/</button>
+			</div>
+			<div class="teclas">
+				<button class="butaun" onclick={handleClear}>Clear</button>
+			</div>
+
+		</div>
+	</div>
+</template>
